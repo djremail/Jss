@@ -10,17 +10,10 @@ xhr.onreadystatechange = function (){
 	if(xhr.status != 200){
 		console.log(xhr.status + ": " + xhr.statusText);
 	}else{
-		// console.log(xhr.responseText);
-		// console.log (JSON.parse (xhr.responseText));
-		let arrText = (JSON.parse (xhr.responseText));
-		// let objText = arrText.forEach(element => {
-		// 	console.log (element)
-		// });
-		
-		console.log (arrText);
+		let newText = (JSON.parse (xhr.responseText));
+		let resultText = document.querySelector ('.main_text')
+		// console.log (newText.book);
 
-		for (let key in arrText) {
-			document.write (`${key} : ${arrText[key]}<br>`)
-		}
+		newText.book.forEach(element => resultText.innerHTML = (element));
 	}
 }
