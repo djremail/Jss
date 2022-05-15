@@ -1,0 +1,9 @@
+{
+	"book":
+	[
+		{"Avtor":"King", "BookName":"Ono","Citizen":"USA"},
+		{"Avtor":"Avtor2", "BookName":"BookName1","Citizen":"Bolgari"},
+		{"Avtor":"Avtor3", "BookName":"BookName2","Citizen":"Germany"},
+		{"Avtor":"Avtor4", "BookName":"BookName3","Citizen":"USA"}
+	]
+}
